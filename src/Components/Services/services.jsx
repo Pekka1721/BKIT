@@ -64,7 +64,7 @@ export default function Services() {
           <div className="mt-10 flex flex-wrap flex-row items-center justify-space-between gap-x-6 lg:justify-start">
             <div className="flex flex-wrap">
                 <p className="text-xl font-bold  text-gray-900 mb-2 hover:text-indgo-600">
-              Be ready to <span className="text-indigo-600">K</span>ick start your careers with out IT Solutions.
+              Be ready to <span className="text-indigo-600">K</span>ick start your careers with our IT Solutions.
               
               </p>
             </div>

@@ -1,10 +1,11 @@
 import { ChevronDownIcon } from '@heroicons/react/16/solid'
 import { useState } from 'react'
 import emailjs from "emailjs-com"
-
+import { useNavigate } from 'react-router-dom';
 
 export default function Contact() {
   const [formData,setFormData] = useState({});
+  const navigate = useNavigate();
 //   emailjs.send("service_01ud2k6","template_41jy1vq",{
 // name: "rajender",
 // title: "testing",
@@ -18,6 +19,9 @@ export default function Contact() {
         mobile:formData.phone_number
       },"nHhWlqk1Qk8qaafA2").then((response)=>{
         console.log(response);
+        if(response.status==200&&response.text==="OK"){
+          navigate("/");
+        }
       }).catch((err)=>{
         console.error(err,"err");
       })
