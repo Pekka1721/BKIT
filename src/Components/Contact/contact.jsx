@@ -6,11 +6,6 @@ import { useNavigate } from 'react-router-dom';
 export default function Contact() {
   const [formData,setFormData] = useState({});
   const navigate = useNavigate();
-//   emailjs.send("service_01ud2k6","template_41jy1vq",{
-// name: "rajender",
-// title: "testing",
-// email: "yeahyeah@yopmail.com",
-// });
     const buttonHandler = ()=>{
       emailjs.send("service_01ud2k6","template_41jy1vq",{
         name:formData.first_name + formData.last_name,
@@ -18,15 +13,12 @@ export default function Contact() {
         message:formData.message,
         mobile:formData.phone_number
       },"nHhWlqk1Qk8qaafA2").then((response)=>{
-        console.log(response);
         if(response.status==200&&response.text==="OK"){
           navigate("/");
         }
       }).catch((err)=>{
         console.error(err,"err");
       })
-      //post button hadler 
-      console.log(formData);
     }
 
   const handleFormFeilds = (event)=>{

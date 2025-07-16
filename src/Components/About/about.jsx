@@ -13,7 +13,7 @@ export default function About(){
              About Us
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
-              Founded in September 2024, BkitSolutions offers businesses trained resources at zero cost. We specialize in campus hiring, connecting companies with top talent from colleges. We also build custom projects for SMEs and provide corporate training programs to enhance workforce skills. Our mission is to support businesses by providing skilled talent, tailored solutions, and impactful training—without any cost for the trained resources we offer.
+              Founded in September 2024, BKIT Solutions offers businesses trained resources at zero cost. We specialize in campus hiring, connecting companies with top talent from colleges. We also build custom projects for SMEs and provide corporate training programs to enhance workforce skills. Our mission is to support businesses by providing skilled talent, tailored solutions, and impactful training—without any cost for the trained resources we offer.
             </p>
           </div>
         </div>
